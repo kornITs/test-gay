@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test if gay</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Enter your name, we'll test if you are gay or not.</h2>
+    <input type="text" class="js-input">
+    <button onclick="activateGayTest();">Check</button>
+    <div class="js-result"></div>
+
+    <script>
+      function activateGayTest() {
+        let playerName = document.querySelector(".js-input").value;
+        playerName = playerName.toLowerCase();
+        if (playerName === "yaya") {
+          document.querySelector(".js-result").innerHTML = "You are gay.";
+        } else {
+          document.querySelector(".js-result").innerHTML = "You are not gay.";
+        }
+      }
+    </script>
+  </body>
+</html>
